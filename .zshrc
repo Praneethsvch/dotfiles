@@ -115,13 +115,6 @@ alias ls="eza --color=always --long --git --icons=always"
 #zoxide 
 alias cd="z"
 
-fpath+=/opt/homebrew/share/zsh/site-functions
-
-# Activate Pure Theme
-# Make sure to remove this if you use another theme
-#autoload -U promptinit; promptinit
-#prompt  pure
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 bindkey '^ ' autosuggest-accept

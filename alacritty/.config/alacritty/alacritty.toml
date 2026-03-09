@@ -13,3 +13,6 @@ live_config_reload = true
 
 [font]
 normal = { family = "IBM Plex Mono", style = "Regular" }
+
+[terminal.shell]
+program = "/usr/bin/zsh"

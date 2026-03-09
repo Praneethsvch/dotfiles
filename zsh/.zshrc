@@ -120,3 +120,5 @@ alias cd="z"
 bindkey '^ ' autosuggest-accept
 
 eval "$(zoxide init zsh)"
+export PATH=/opt/SEGGER/JLink:$PATH
+export LD_LIBRARY_PATH=/opt/SEGGER/JLink:$LD_LIBRARY_PATH

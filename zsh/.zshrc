@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+# Homebrew must be available in interactive, non-login shells (such as Alacritty).
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -70,10 +73,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	git 
-	zsh-autosuggestions
-)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 
 # zsh
 source <(fzf --zsh)
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # eza 
 alias ls="eza --color=always --long --git --icons=always"
@@ -120,5 +121,6 @@ alias cd="z"
 bindkey '^ ' autosuggest-accept
 
 eval "$(zoxide init zsh)"
+
 export PATH=/opt/SEGGER/JLink:$PATH
 export LD_LIBRARY_PATH=/opt/SEGGER/JLink:$LD_LIBRARY_PATH

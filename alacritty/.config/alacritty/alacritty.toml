@@ -12,7 +12,15 @@ opacity=1
 live_config_reload = true
 
 [font]
-normal = { family = "IBM Plex Mono", style = "Regular" }
+normal = { family = "Source Code Pro", style = "Regular" }
+bold = { family = "Source Code Pro", style = "Bold" }
+italic = { family = "Source Code Pro", style = "Italic" }
+bold_italic = { family = "Source Code Pro", style = "Bold Italic" }
 
 [terminal.shell]
-program = "/usr/bin/zsh"
+program = "/bin/zsh"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"

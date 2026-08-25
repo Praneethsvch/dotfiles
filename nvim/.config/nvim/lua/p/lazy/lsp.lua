@@ -153,7 +153,6 @@ return {
 						end
 				end
 				},
-				cmake = {},
 				marksman = {},
 				pyright = {},
 				rust_analyzer = {},

@@ -1,17 +1,21 @@
-
-[env]
-TERM = "xterm-256color"
-
-[window]
-decorations = "buttonless"
-dynamic_padding = false
-
-opacity=1
-
 [general]
 live_config_reload = true
 
+[env]
+TERM = "xterm-256color"
+COLORTERM = "truecolor" 
+
+[window]
+decorations = "buttonless"
+padding = { x = 14, y = 10 }     # text no longer touches the edges
+dynamic_padding = true           # spreads leftover pixels evenly
+opacity = 1.0
+option_as_alt = "Both"           # Option works as Alt in zsh/nvim
+
 [font]
+size = 14.0
+offset = { x = 0, y = 4 }        # extra line spacing, the biggest readability win
+glyph_offset = { x = 0, y = 2 }  # keeps glyphs vertically centered with the offset
 normal = { family = "Source Code Pro", style = "Regular" }
 bold = { family = "Source Code Pro", style = "Bold" }
 italic = { family = "Source Code Pro", style = "Italic" }
@@ -24,3 +28,14 @@ program = "/bin/zsh"
 key = "Return"
 mods = "Shift"
 chars = "\u001B\r"
+
+[colors]
+draw_bold_text_with_bright_colors = false   # bold stays bold, not neon
+
+[colors.primary]
+background = "#1a1b26"
+foreground = "#c0caf5"
+
+[colors.selection]
+background = "#33467c"
+text = "CellForeground"
